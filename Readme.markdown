@@ -20,13 +20,14 @@ BCTabBarController is completely written from scratch using public APIs to fix a
 * Support for all orientations
 * Same height as a standard UIToolbar
 
-### Installation
+### Usage
 * Add BCTabBarController.xcodeproj to your project by dragging it into the Groups & Files sidebar.
 * Select the added project file in the sidebar and then check the box next to libBCTabBarController.a
 * Select your project's target and right-click and choose "Get Info"
 * Click the + icon underneath Direct Dependencies and add the BCTabBarController target
 * libBCTabBarController.a should already be in the list of Linked Libraries
 * Drag BCTabBarController.bundle into your project's resources
+* If you haven't already, add the QuartzCore and Core Graphics frameworks to your project
 * Define the method <code>- (NSString *)iconImageName</code> in each view controller that you add to the tab bar. It should return the filename of the grey tab icon (see creation steps below)
 * See the example target for usage
 
