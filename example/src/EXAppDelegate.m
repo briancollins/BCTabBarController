@@ -9,6 +9,9 @@
 	self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
 	self.tabBarController = [[[BCTabBarController alloc] init] autorelease];
 	self.tabBarController.viewControllers = [NSArray arrayWithObjects:
+											 [[[UINavigationController alloc]
+											  initWithRootViewController:[[[EXViewController alloc] init] autorelease]]
+											  autorelease],
 											 [[[EXViewController alloc] init] autorelease],
 											 [[[EXViewController alloc] init] autorelease],
 											 [[[EXViewController alloc] init] autorelease],

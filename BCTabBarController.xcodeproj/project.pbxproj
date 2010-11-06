@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		D35297821285834A00CC4AE1 /* UINavigationController+icons.m in Sources */ = {isa = PBXBuildFile; fileRef = D35297811285834A00CC4AE1 /* UINavigationController+icons.m */; };
 		D3B2F6C712855CAC0089B15B /* prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = D3B2F6BE12855CAC0089B15B /* prefix.pch */; };
 		D3B2F6C812855CAC0089B15B /* BCTab.h in Headers */ = {isa = PBXBuildFile; fileRef = D3B2F6BF12855CAC0089B15B /* BCTab.h */; };
 		D3B2F6C912855CAC0089B15B /* BCTab.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B2F6C012855CAC0089B15B /* BCTab.m */; };
@@ -48,6 +49,8 @@
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libBCTabBarController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBCTabBarController.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D352977312856A9F00CC4AE1 /* Readme.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.markdown; sourceTree = "<group>"; };
+		D35297801285834A00CC4AE1 /* UINavigationController+icons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+icons.h"; sourceTree = "<group>"; };
+		D35297811285834A00CC4AE1 /* UINavigationController+icons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+icons.m"; sourceTree = "<group>"; };
 		D3B2F6BE12855CAC0089B15B /* prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prefix.pch; sourceTree = "<group>"; };
 		D3B2F6BF12855CAC0089B15B /* BCTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCTab.h; sourceTree = "<group>"; };
 		D3B2F6C012855CAC0089B15B /* BCTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCTab.m; sourceTree = "<group>"; };
@@ -148,6 +151,8 @@
 				D3B2F6C612855CAC0089B15B /* BCTabBarView.m */,
 				D3B2F72C12855CF10089B15B /* UIViewController+iconImage.h */,
 				D3B2F72D12855CF10089B15B /* UIViewController+iconImage.m */,
+				D35297801285834A00CC4AE1 /* UINavigationController+icons.h */,
+				D35297811285834A00CC4AE1 /* UINavigationController+icons.m */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -317,6 +322,7 @@
 				D3B2F7F312855F460089B15B /* EXAppDelegate.m in Sources */,
 				D3B2F7F812855F650089B15B /* main.m in Sources */,
 				D3B2F83F128560940089B15B /* EXViewController.m in Sources */,
+				D35297821285834A00CC4AE1 /* UINavigationController+icons.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
