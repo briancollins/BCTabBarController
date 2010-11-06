@@ -19,11 +19,35 @@
 		D3B2F6CF12855CAC0089B15B /* BCTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B2F6C612855CAC0089B15B /* BCTabBarView.m */; };
 		D3B2F72E12855CF10089B15B /* UIViewController+iconImage.h in Headers */ = {isa = PBXBuildFile; fileRef = D3B2F72C12855CF10089B15B /* UIViewController+iconImage.h */; };
 		D3B2F72F12855CF10089B15B /* UIViewController+iconImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B2F72D12855CF10089B15B /* UIViewController+iconImage.m */; };
+		D3B2F78512855EF30089B15B /* libBCTabBarController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC07E0554694100DB518D /* libBCTabBarController.a */; };
+		D3B2F78812855F020089B15B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		D3B2F7DF12855F110089B15B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B2F78912855F090089B15B /* UIKit.framework */; };
+		D3B2F7F312855F460089B15B /* EXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B2F7F212855F460089B15B /* EXAppDelegate.m */; };
+		D3B2F7F812855F650089B15B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B2F7F712855F650089B15B /* main.m */; };
+		D3B2F812128560560089B15B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B2F811128560560089B15B /* QuartzCore.framework */; };
+		D3B2F82D128560670089B15B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B2F82C128560670089B15B /* CoreGraphics.framework */; };
+		D3B2F83F128560940089B15B /* EXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B2F83E128560940089B15B /* EXViewController.m */; };
+		D3B2F8651285618F0089B15B /* magnifying-glass-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B2F8611285618F0089B15B /* magnifying-glass-selected.png */; };
+		D3B2F8661285618F0089B15B /* magnifying-glass-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B2F8621285618F0089B15B /* magnifying-glass-selected@2x.png */; };
+		D3B2F8671285618F0089B15B /* magnifying-glass.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B2F8631285618F0089B15B /* magnifying-glass.png */; };
+		D3B2F8681285618F0089B15B /* magnifying-glass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B2F8641285618F0089B15B /* magnifying-glass@2x.png */; };
+		D3B2F8E3128563170089B15B /* BCTabBarController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D3B2F8E2128563170089B15B /* BCTabBarController.bundle */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3B2F78312855EEF0089B15B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = BCTabBarController;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libBCTabBarController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBCTabBarController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D352977312856A9F00CC4AE1 /* Readme.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.markdown; sourceTree = "<group>"; };
 		D3B2F6BE12855CAC0089B15B /* prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prefix.pch; sourceTree = "<group>"; };
 		D3B2F6BF12855CAC0089B15B /* BCTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCTab.h; sourceTree = "<group>"; };
 		D3B2F6C012855CAC0089B15B /* BCTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCTab.m; sourceTree = "<group>"; };
@@ -35,6 +59,22 @@
 		D3B2F6C612855CAC0089B15B /* BCTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCTabBarView.m; sourceTree = "<group>"; };
 		D3B2F72C12855CF10089B15B /* UIViewController+iconImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+iconImage.h"; sourceTree = "<group>"; };
 		D3B2F72D12855CF10089B15B /* UIViewController+iconImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+iconImage.m"; sourceTree = "<group>"; };
+		D3B2F77712855E1B0089B15B /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3B2F77912855E1B0089B15B /* Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Example-Info.plist"; sourceTree = "<group>"; };
+		D3B2F78912855F090089B15B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D3B2F7F112855F460089B15B /* EXAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXAppDelegate.h; sourceTree = "<group>"; };
+		D3B2F7F212855F460089B15B /* EXAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXAppDelegate.m; sourceTree = "<group>"; };
+		D3B2F7F712855F650089B15B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D3B2F811128560560089B15B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D3B2F82C128560670089B15B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D3B2F83D128560940089B15B /* EXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXViewController.h; sourceTree = "<group>"; };
+		D3B2F83E128560940089B15B /* EXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXViewController.m; sourceTree = "<group>"; };
+		D3B2F84E1285610A0089B15B /* prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prefix.pch; sourceTree = "<group>"; };
+		D3B2F8611285618F0089B15B /* magnifying-glass-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "magnifying-glass-selected.png"; sourceTree = "<group>"; };
+		D3B2F8621285618F0089B15B /* magnifying-glass-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "magnifying-glass-selected@2x.png"; sourceTree = "<group>"; };
+		D3B2F8631285618F0089B15B /* magnifying-glass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "magnifying-glass.png"; sourceTree = "<group>"; };
+		D3B2F8641285618F0089B15B /* magnifying-glass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "magnifying-glass@2x.png"; sourceTree = "<group>"; };
+		D3B2F8E2128563170089B15B /* BCTabBarController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BCTabBarController.bundle; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +86,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D3B2F77512855E1B0089B15B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3B2F78512855EF30089B15B /* libBCTabBarController.a in Frameworks */,
+				D3B2F78812855F020089B15B /* Foundation.framework in Frameworks */,
+				D3B2F7DF12855F110089B15B /* UIKit.framework in Frameworks */,
+				D3B2F812128560560089B15B /* QuartzCore.framework in Frameworks */,
+				D3B2F82D128560670089B15B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -53,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				D2AAC07E0554694100DB518D /* libBCTabBarController.a */,
+				D3B2F77712855E1B0089B15B /* Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,8 +114,11 @@
 			isa = PBXGroup;
 			children = (
 				D3B2F6BC12855CAC0089B15B /* src */,
+				D3B2F77D12855E4B0089B15B /* example */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
+				D3B2F77912855E1B0089B15B /* Example-Info.plist */,
+				D352977312856A9F00CC4AE1 /* Readme.markdown */,
 			);
 			name = BCTabBarController;
 			sourceTree = "<group>";
@@ -71,6 +127,9 @@
 			isa = PBXGroup;
 			children = (
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+				D3B2F78912855F090089B15B /* UIKit.framework */,
+				D3B2F811128560560089B15B /* QuartzCore.framework */,
+				D3B2F82C128560670089B15B /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -97,6 +156,48 @@
 			isa = PBXGroup;
 			children = (
 				D3B2F6BE12855CAC0089B15B /* prefix.pch */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		D3B2F77D12855E4B0089B15B /* example */ = {
+			isa = PBXGroup;
+			children = (
+				D3B2F7E512855F260089B15B /* src */,
+				D3B2F77E12855E4B0089B15B /* res */,
+			);
+			path = example;
+			sourceTree = "<group>";
+		};
+		D3B2F77E12855E4B0089B15B /* res */ = {
+			isa = PBXGroup;
+			children = (
+				D3B2F8611285618F0089B15B /* magnifying-glass-selected.png */,
+				D3B2F8621285618F0089B15B /* magnifying-glass-selected@2x.png */,
+				D3B2F8631285618F0089B15B /* magnifying-glass.png */,
+				D3B2F8641285618F0089B15B /* magnifying-glass@2x.png */,
+				D3B2F8E2128563170089B15B /* BCTabBarController.bundle */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		D3B2F7E512855F260089B15B /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D3B2F84D128561010089B15B /* base */,
+				D3B2F7F112855F460089B15B /* EXAppDelegate.h */,
+				D3B2F7F212855F460089B15B /* EXAppDelegate.m */,
+				D3B2F7F712855F650089B15B /* main.m */,
+				D3B2F83D128560940089B15B /* EXViewController.h */,
+				D3B2F83E128560940089B15B /* EXViewController.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		D3B2F84D128561010089B15B /* base */ = {
+			isa = PBXGroup;
+			children = (
+				D3B2F84E1285610A0089B15B /* prefix.pch */,
 			);
 			path = base;
 			sourceTree = "<group>";
@@ -137,6 +238,24 @@
 			productReference = D2AAC07E0554694100DB518D /* libBCTabBarController.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		D3B2F77612855E1B0089B15B /* Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3B2F77C12855E1C0089B15B /* Build configuration list for PBXNativeTarget "Example" */;
+			buildPhases = (
+				D3B2F77312855E1B0089B15B /* Resources */,
+				D3B2F77412855E1B0089B15B /* Sources */,
+				D3B2F77512855E1B0089B15B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3B2F78412855EEF0089B15B /* PBXTargetDependency */,
+			);
+			name = Example;
+			productName = Example;
+			productReference = D3B2F77712855E1B0089B15B /* Example.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -158,9 +277,25 @@
 			projectRoot = "";
 			targets = (
 				D2AAC07D0554694100DB518D /* BCTabBarController */,
+				D3B2F77612855E1B0089B15B /* Example */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3B2F77312855E1B0089B15B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3B2F8651285618F0089B15B /* magnifying-glass-selected.png in Resources */,
+				D3B2F8661285618F0089B15B /* magnifying-glass-selected@2x.png in Resources */,
+				D3B2F8671285618F0089B15B /* magnifying-glass.png in Resources */,
+				D3B2F8681285618F0089B15B /* magnifying-glass@2x.png in Resources */,
+				D3B2F8E3128563170089B15B /* BCTabBarController.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D2AAC07B0554694100DB518D /* Sources */ = {
@@ -175,7 +310,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D3B2F77412855E1B0089B15B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3B2F7F312855F460089B15B /* EXAppDelegate.m in Sources */,
+				D3B2F7F812855F650089B15B /* main.m in Sources */,
+				D3B2F83F128560940089B15B /* EXViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3B2F78412855EEF0089B15B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC07D0554694100DB518D /* BCTabBarController */;
+			targetProxy = D3B2F78312855EEF0089B15B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1DEB921F08733DC00010E9CD /* Debug */ = {
@@ -237,6 +390,55 @@
 			};
 			name = Release;
 		};
+		D3B2F77A12855E1C0089B15B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = example/src/base/prefix.pch;
+				INFOPLIST_FILE = "Example-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Example;
+				SDKROOT = iphoneos4.1;
+			};
+			name = Debug;
+		};
+		D3B2F77B12855E1C0089B15B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
+				INFOPLIST_FILE = "Example-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Example;
+				SDKROOT = iphoneos4.1;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -254,6 +456,15 @@
 			buildConfigurations = (
 				1DEB922308733DC00010E9CD /* Debug */,
 				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3B2F77C12855E1C0089B15B /* Build configuration list for PBXNativeTarget "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3B2F77A12855E1C0089B15B /* Debug */,
+				D3B2F77B12855E1C0089B15B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -11,8 +11,8 @@
 - (id)initWithIconImageName:(NSString *)imageName {
 	if (self = [super init]) {
 		self.adjustsImageWhenHighlighted = NO;
-		self.background = [UIImage imageNamed:@"tab-background.png"];
-		self.rightBorder = [UIImage imageNamed:@"tab-right-border.png"];
+		self.background = [UIImage imageNamed:@"BCTabBarController.bundle/tab-background.png"];
+		self.rightBorder = [UIImage imageNamed:@"BCTabBarController.bundle/tab-right-border.png"];
 		self.backgroundColor = [UIColor clearColor];
 		
 		NSString *selectedName = [NSString stringWithFormat:@"%@-selected.%@",

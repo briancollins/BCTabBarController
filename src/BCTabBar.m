@@ -14,8 +14,8 @@
 - (id)initWithFrame:(CGRect)aFrame {
 
 	if (self = [super initWithFrame:aFrame]) {
-		self.backgroundImage = [UIImage imageNamed:@"tab-bar-background.png"];
-		self.arrow = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tab-arrow.png"]] autorelease];
+		self.backgroundImage = [UIImage imageNamed:@"BCTabBarController.bundle/tab-bar-background.png"];
+		self.arrow = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"BCTabBarController.bundle/tab-arrow.png"]] autorelease];
 		CGRect r = self.arrow.frame;
 		r.origin.y = - (r.size.height - 2);
 		self.arrow.frame = r;

@@ -89,7 +89,7 @@
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
-	return toInterfaceOrientation != UIDeviceOrientationPortraitUpsideDown;
+	return [self.selectedViewController shouldAutorotateToInterfaceOrientation:toInterfaceOrientation];
 }
 
 - (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
