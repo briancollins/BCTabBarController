@@ -1,0 +1,264 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		D3B2F6C712855CAC0089B15B /* prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = D3B2F6BE12855CAC0089B15B /* prefix.pch */; };
+		D3B2F6C812855CAC0089B15B /* BCTab.h in Headers */ = {isa = PBXBuildFile; fileRef = D3B2F6BF12855CAC0089B15B /* BCTab.h */; };
+		D3B2F6C912855CAC0089B15B /* BCTab.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B2F6C012855CAC0089B15B /* BCTab.m */; };
+		D3B2F6CA12855CAC0089B15B /* BCTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = D3B2F6C112855CAC0089B15B /* BCTabBar.h */; };
+		D3B2F6CB12855CAC0089B15B /* BCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B2F6C212855CAC0089B15B /* BCTabBar.m */; };
+		D3B2F6CC12855CAC0089B15B /* BCTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = D3B2F6C312855CAC0089B15B /* BCTabBarController.h */; };
+		D3B2F6CD12855CAC0089B15B /* BCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B2F6C412855CAC0089B15B /* BCTabBarController.m */; };
+		D3B2F6CE12855CAC0089B15B /* BCTabBarView.h in Headers */ = {isa = PBXBuildFile; fileRef = D3B2F6C512855CAC0089B15B /* BCTabBarView.h */; };
+		D3B2F6CF12855CAC0089B15B /* BCTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B2F6C612855CAC0089B15B /* BCTabBarView.m */; };
+		D3B2F72E12855CF10089B15B /* UIViewController+iconImage.h in Headers */ = {isa = PBXBuildFile; fileRef = D3B2F72C12855CF10089B15B /* UIViewController+iconImage.h */; };
+		D3B2F72F12855CF10089B15B /* UIViewController+iconImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B2F72D12855CF10089B15B /* UIViewController+iconImage.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libBCTabBarController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBCTabBarController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3B2F6BE12855CAC0089B15B /* prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prefix.pch; sourceTree = "<group>"; };
+		D3B2F6BF12855CAC0089B15B /* BCTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCTab.h; sourceTree = "<group>"; };
+		D3B2F6C012855CAC0089B15B /* BCTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCTab.m; sourceTree = "<group>"; };
+		D3B2F6C112855CAC0089B15B /* BCTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCTabBar.h; sourceTree = "<group>"; };
+		D3B2F6C212855CAC0089B15B /* BCTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCTabBar.m; sourceTree = "<group>"; };
+		D3B2F6C312855CAC0089B15B /* BCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCTabBarController.h; sourceTree = "<group>"; };
+		D3B2F6C412855CAC0089B15B /* BCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCTabBarController.m; sourceTree = "<group>"; };
+		D3B2F6C512855CAC0089B15B /* BCTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCTabBarView.h; sourceTree = "<group>"; };
+		D3B2F6C612855CAC0089B15B /* BCTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCTabBarView.m; sourceTree = "<group>"; };
+		D3B2F72C12855CF10089B15B /* UIViewController+iconImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+iconImage.h"; sourceTree = "<group>"; };
+		D3B2F72D12855CF10089B15B /* UIViewController+iconImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+iconImage.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libBCTabBarController.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* BCTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				D3B2F6BC12855CAC0089B15B /* src */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = BCTabBarController;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3B2F6BC12855CAC0089B15B /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D3B2F6BD12855CAC0089B15B /* base */,
+				D3B2F6BF12855CAC0089B15B /* BCTab.h */,
+				D3B2F6C012855CAC0089B15B /* BCTab.m */,
+				D3B2F6C112855CAC0089B15B /* BCTabBar.h */,
+				D3B2F6C212855CAC0089B15B /* BCTabBar.m */,
+				D3B2F6C312855CAC0089B15B /* BCTabBarController.h */,
+				D3B2F6C412855CAC0089B15B /* BCTabBarController.m */,
+				D3B2F6C512855CAC0089B15B /* BCTabBarView.h */,
+				D3B2F6C612855CAC0089B15B /* BCTabBarView.m */,
+				D3B2F72C12855CF10089B15B /* UIViewController+iconImage.h */,
+				D3B2F72D12855CF10089B15B /* UIViewController+iconImage.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		D3B2F6BD12855CAC0089B15B /* base */ = {
+			isa = PBXGroup;
+			children = (
+				D3B2F6BE12855CAC0089B15B /* prefix.pch */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3B2F6C712855CAC0089B15B /* prefix.pch in Headers */,
+				D3B2F6C812855CAC0089B15B /* BCTab.h in Headers */,
+				D3B2F6CA12855CAC0089B15B /* BCTabBar.h in Headers */,
+				D3B2F6CC12855CAC0089B15B /* BCTabBarController.h in Headers */,
+				D3B2F6CE12855CAC0089B15B /* BCTabBarView.h in Headers */,
+				D3B2F72E12855CF10089B15B /* UIViewController+iconImage.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* BCTabBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "BCTabBarController" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BCTabBarController;
+			productName = BCTabBarController;
+			productReference = D2AAC07E0554694100DB518D /* libBCTabBarController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "BCTabBarController" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* BCTabBarController */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* BCTabBarController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3B2F6C912855CAC0089B15B /* BCTab.m in Sources */,
+				D3B2F6CB12855CAC0089B15B /* BCTabBar.m in Sources */,
+				D3B2F6CD12855CAC0089B15B /* BCTabBarController.m in Sources */,
+				D3B2F6CF12855CAC0089B15B /* BCTabBarView.m in Sources */,
+				D3B2F72F12855CF10089B15B /* UIViewController+iconImage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/BCTabBarController.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = src/base/prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = BCTabBarController;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/BCTabBarController.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BCTabBarController_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = BCTabBarController;
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.1;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "BCTabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "BCTabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
