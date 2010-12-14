@@ -11,6 +11,7 @@
 }
 
 - (id)initWithFrame:(CGRect)aFrame;
+- (void)setSelectedTab:(BCTab *)aTab animated:(BOOL)animated;
 
 @property (nonatomic, retain) NSArray *tabs;
 @property (nonatomic, retain) BCTab *selectedTab;

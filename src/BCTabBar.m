@@ -45,12 +45,6 @@
 	[tabs release];
 	tabs = [array retain];
 	
-	if (tabs.count) {
-		[[tabs objectAtIndex:0] setSelected:YES];
-		self.selectedTab = [tabs objectAtIndex:0];
-		[self.delegate tabBar:self didSelectTabAtIndex:0];
-	}
-	
 	for (BCTab *tab in tabs) {
 		tab.userInteractionEnabled = YES;
 		[tab addTarget:self action:@selector(tabSelected:) forControlEvents:UIControlEventTouchDown];
@@ -58,16 +52,28 @@
 	[self setNeedsLayout];
 }
 
-- (void)tabSelected:(BCTab *)sender {
-	for (BCTab *tab in tabs) {
-		if (tab == sender) continue;
+- (void)setSelectedTab:(BCTab *)aTab animated:(BOOL)animated {
+	if (aTab != selectedTab) {
+		[selectedTab release];
+		selectedTab = [aTab retain];
+		selectedTab.selected = YES;
 		
-		tab.selected = NO;
+		for (BCTab *tab in tabs) {
+			if (tab == aTab) continue;
+			
+			tab.selected = NO;
+		}
 	}
-	sender.selected = YES;
-	self.selectedTab = sender;
+	
+	[self positionArrowAnimated:animated];	
+}
+
+- (void)setSelectedTab:(BCTab *)aTab {
+	[self setSelectedTab:aTab animated:YES];
+}
+
+- (void)tabSelected:(BCTab *)sender {
 	[self.delegate tabBar:self didSelectTabAtIndex:[self.tabs indexOfObject:sender]];
-	[self positionArrowAnimated:YES];
 }
 
 - (void)positionArrowAnimated:(BOOL)animated {

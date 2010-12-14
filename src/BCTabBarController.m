@@ -31,6 +31,7 @@
 															  self.view.bounds.size.width, 44)]
 				   autorelease];
 	self.tabBar.delegate = self;
+	
 	self.view.backgroundColor = [UIColor clearColor];
 	self.tabBarView.tabBar = self.tabBar;
 	[self loadTabs];
@@ -51,14 +52,26 @@
 
 - (void)setSelectedViewController:(UIViewController *)vc {
 	UIViewController *oldVC = selectedViewController;
+	if (selectedViewController != vc) {
+		[selectedViewController release];
+		selectedViewController = [vc retain];
+		[oldVC viewWillDisappear:NO];
+		[selectedViewController viewWillAppear:NO];
+		self.tabBarView.contentView = vc.view;
+		[oldVC viewDidDisappear:NO];
+		[selectedViewController viewDidAppear:NO];
+		
+		[self.tabBar setSelectedTab:[self.tabBar.tabs objectAtIndex:self.selectedIndex] animated:(oldVC != nil)];
+	}
+}
 
-	[selectedViewController release];
-	selectedViewController = [vc retain];
-	[oldVC viewWillDisappear:NO];
-	[selectedViewController viewWillAppear:NO];
-	self.tabBarView.contentView = vc.view;
-	[oldVC viewDidDisappear:NO];
-	[selectedViewController viewDidAppear:NO];
+- (NSUInteger)selectedIndex {
+	return [self.viewControllers indexOfObject:self.selectedViewController];
+}
+
+- (void)setSelectedIndex:(NSUInteger)aSelectedIndex {
+	if (self.viewControllers.count > aSelectedIndex)
+		self.selectedViewController = [self.viewControllers objectAtIndex:aSelectedIndex];
 }
 
 - (void)loadTabs {
@@ -67,6 +80,7 @@
 		[tabs addObject:[[[BCTab alloc] initWithIconImageName:[vc iconImageName]] autorelease]];
 	}
 	self.tabBar.tabs = tabs;
+	[self.tabBar setSelectedTab:[self.tabBar.tabs objectAtIndex:self.selectedIndex] animated:NO];
 }
 
 - (void)viewDidUnload {
@@ -75,9 +89,14 @@
 }
 
 - (void)setViewControllers:(NSArray *)array {
-	[viewControllers release];
-	viewControllers = [array retain];
-	[self loadTabs];
+	if (array != viewControllers) {
+		[viewControllers release];
+		viewControllers = [array retain];
+		
+		[self loadTabs];
+	}
+	
+	self.selectedIndex = 0;
 }
 
 - (void)dealloc {
