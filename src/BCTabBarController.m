@@ -28,6 +28,10 @@
 	self.tabBarView.backgroundColor = [UIColor clearColor];
 	self.tabBarView.tabBar = self.tabBar;
 	[self loadTabs];
+	
+	UIViewController *tmp = selectedViewController;
+	selectedViewController = nil;
+	[self setSelectedViewController:tmp];
 }
 
 - (void)tabBar:(BCTabBar *)aTabBar didSelectTabAtIndex:(NSInteger)index {
