@@ -16,13 +16,6 @@
 @implementation BCTabBarController
 @synthesize viewControllers, tabBar, selectedTab, selectedViewController, tabBarView;
 
-- (id)init {
-	if (self = [super init]) {
-	}
-	
-	return self;
-}
-
 - (void)viewDidLoad {
 	self.tabBarView = [[[BCTabBarView alloc] initWithFrame:self.view.frame] autorelease];
 	self.view = self.tabBarView;
