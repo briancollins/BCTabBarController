@@ -40,7 +40,7 @@ Unlike UITabBarController, the tab bar icons in BCTabBars are have two pre-rende
 
 
 ### Screenshots
-![](http://imgur.com/b2AxI.png) ![](http://imgur.com/CWX5J.png)
+![](http://brisy.info/upload/b2AxI.png) ![](http://brisy.info/upload/CWX5J.png)
 
 
 ### Acknowledgements
