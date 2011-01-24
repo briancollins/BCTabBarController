@@ -16,8 +16,8 @@
 @implementation BCTabBarController
 @synthesize viewControllers, tabBar, selectedTab, selectedViewController, tabBarView;
 
-- (void)viewDidLoad {
-	self.tabBarView = [[[BCTabBarView alloc] initWithFrame:self.view.frame] autorelease];
+- (void)loadView {
+	self.tabBarView = [[[BCTabBarView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]] autorelease];
 	self.view = self.tabBarView;
 
 	self.tabBar = [[[BCTabBar alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height - 44, 
@@ -25,10 +25,9 @@
 				   autorelease];
 	self.tabBar.delegate = self;
 	
-	self.view.backgroundColor = [UIColor clearColor];
+	self.tabBarView.backgroundColor = [UIColor clearColor];
 	self.tabBarView.tabBar = self.tabBar;
 	[self loadTabs];
-	[super viewDidLoad];
 }
 
 - (void)tabBar:(BCTabBar *)aTabBar didSelectTabAtIndex:(NSInteger)index {
