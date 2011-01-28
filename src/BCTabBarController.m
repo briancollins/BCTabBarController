@@ -89,7 +89,9 @@
 		[viewControllers release];
 		viewControllers = [array retain];
 		
-		[self loadTabs];
+		if (viewControllers != nil) {
+			[self loadTabs];
+		}
 	}
 	
 	self.selectedIndex = 0;
