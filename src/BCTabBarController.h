@@ -6,6 +6,7 @@
 	UIViewController *selectedViewController;
 	BCTabBar *tabBar;
 	BCTabBarView *tabBarView;
+	BOOL visible;
 }
 
 @property (nonatomic, retain) NSArray *viewControllers;

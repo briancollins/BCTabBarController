@@ -51,15 +51,43 @@
 	if (selectedViewController != vc) {
 		[selectedViewController release];
 		selectedViewController = [vc retain];
-		[oldVC viewWillDisappear:NO];
-		[selectedViewController viewWillAppear:NO];
+		if (visible) {
+			[oldVC viewWillDisappear:NO];
+			[selectedViewController viewWillAppear:NO];
+		}
 		self.tabBarView.contentView = vc.view;
-		[oldVC viewDidDisappear:NO];
-		[selectedViewController viewDidAppear:NO];
+		if (visible) {
+			[oldVC viewDidDisappear:NO];
+			[selectedViewController viewDidAppear:NO];
+		}
 		
 		[self.tabBar setSelectedTab:[self.tabBar.tabs objectAtIndex:self.selectedIndex] animated:(oldVC != nil)];
 	}
 }
+
+- (void)viewWillAppear:(BOOL)animated {
+	[super viewWillAppear:animated];
+	[self.selectedViewController viewWillAppear:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+	[super viewDidAppear:animated];
+	[self.selectedViewController viewDidAppear:animated];
+	visible = YES;
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+	[super viewWillDisappear:animated];
+	[self.selectedViewController viewWillDisappear:animated];	
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+	[super viewDidDisappear:animated];
+	[self.selectedViewController viewDidDisappear:animated];
+	visible = NO;
+}
+
+
 
 - (NSUInteger)selectedIndex {
 	return [self.viewControllers indexOfObject:self.selectedViewController];
