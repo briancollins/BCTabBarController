@@ -3,11 +3,21 @@
 @interface BCTab ()
 @property (nonatomic, retain) UIImage *rightBorder;
 @property (nonatomic, retain) UIImage *background;
+@property (nonatomic, retain) NSString *imageName;
 @end
 
 @implementation BCTab
-@synthesize rightBorder, background;
+@synthesize rightBorder, background, imageName;
 
+- (void) assignImages: (NSString *) imageName  {
+  NSString *selectedName = [NSString stringWithFormat:@"%@-selected.%@",
+								   [imageName stringByDeletingPathExtension],
+								   [imageName pathExtension]];
+		
+		[self setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+		[self setImage:[UIImage imageNamed:selectedName] forState:UIControlStateSelected];
+
+}
 - (id)initWithIconImageName:(NSString *)imageName {
 	if (self = [super init]) {
 		self.adjustsImageWhenHighlighted = NO;
@@ -15,12 +25,9 @@
 		self.rightBorder = [UIImage imageNamed:@"BCTabBarController.bundle/tab-right-border.png"];
 		self.backgroundColor = [UIColor clearColor];
 		
-		NSString *selectedName = [NSString stringWithFormat:@"%@-selected.%@",
-								   [imageName stringByDeletingPathExtension],
-								   [imageName pathExtension]];
-		
-		[self setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
-		[self setImage:[UIImage imageNamed:selectedName] forState:UIControlStateSelected];
+		[self assignImages: imageName];
+        self.imageName = imageName;
+
 	}
 	return self;
 }
@@ -28,6 +35,7 @@
 - (void)dealloc {
 	self.rightBorder = nil;
 	self.background = nil;
+    self.imageName = nil;
 	[super dealloc];
 }
 
@@ -65,6 +73,17 @@
 												floor((self.bounds.size.width / 2) -
 												(self.imageView.image.size.width / 2)));
 	self.imageEdgeInsets = imageInsets;
+}
+
+- (void)adjustImageForOrientation {
+    NSString *orientationSuffix = @"";
+    if (UIDeviceOrientationIsLandscape([UIDevice currentDevice].orientation)) {
+        orientationSuffix = @"-landscape";
+    }
+    NSString *orientationAwareName = [NSString stringWithFormat:@"%@%@.%@",
+                              [self.imageName stringByDeletingPathExtension], orientationSuffix,
+                              [self.imageName pathExtension]];
+    [self assignImages:orientationAwareName];
 }
 
 @end

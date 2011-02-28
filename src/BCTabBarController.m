@@ -107,6 +107,12 @@
 	[self.tabBar setSelectedTab:[self.tabBar.tabs objectAtIndex:self.selectedIndex] animated:NO];
 }
 
+- (void)adjustTabsToOrientation {
+    for (BCTab *tab in self.tabBar.tabs) {
+        [tab adjustImageForOrientation];
+    }
+}
+
 - (void)viewDidUnload {
 	self.tabBar = nil;
 	self.selectedTab = nil;
@@ -155,6 +161,7 @@
 
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
 	[self.selectedViewController didRotateFromInterfaceOrientation:fromInterfaceOrientation];
+    [self adjustTabsToOrientation];
 }
 
 @end
