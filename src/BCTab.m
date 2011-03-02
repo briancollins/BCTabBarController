@@ -9,24 +9,24 @@
 @implementation BCTab
 @synthesize rightBorder, background, imageName;
 
-- (void) assignImages: (NSString *) imageName  {
+- (void) assignImages: (NSString *) _imageName  {
   NSString *selectedName = [NSString stringWithFormat:@"%@-selected.%@",
-								   [imageName stringByDeletingPathExtension],
-								   [imageName pathExtension]];
+								   [_imageName stringByDeletingPathExtension],
+								   [_imageName pathExtension]];
 		
-		[self setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+		[self setImage:[UIImage imageNamed:_imageName] forState:UIControlStateNormal];
 		[self setImage:[UIImage imageNamed:selectedName] forState:UIControlStateSelected];
 
 }
-- (id)initWithIconImageName:(NSString *)imageName {
-	if (self = [super init]) {
+- (id)initWithIconImageName:(NSString *)_imageName {
+	if ((self = [super init])) {
 		self.adjustsImageWhenHighlighted = NO;
 		self.background = [UIImage imageNamed:@"BCTabBarController.bundle/tab-background.png"];
 		self.rightBorder = [UIImage imageNamed:@"BCTabBarController.bundle/tab-right-border.png"];
 		self.backgroundColor = [UIColor clearColor];
 		
-		[self assignImages: imageName];
-        self.imageName = imageName;
+		[self assignImages: _imageName];
+        self.imageName = _imageName;
 
 	}
 	return self;
