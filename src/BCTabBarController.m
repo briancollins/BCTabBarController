@@ -21,8 +21,9 @@
 	self.tabBarView = [[BCTabBarView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
 	self.view = self.tabBarView;
 
-	self.tabBar = [[BCTabBar alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height - 44, 
-															  self.view.bounds.size.width, 44)];
+	CGFloat tabBarHeight = 44 + 6; // tabbar + arrow
+	CGFloat adjust = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) ? 1 : 0;
+	self.tabBar = [[BCTabBar alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height - tabBarHeight, self.view.bounds.size.width, tabBarHeight + adjust)];
 	self.tabBar.delegate = self;
 	
 	self.tabBarView.backgroundColor = [UIColor clearColor];
