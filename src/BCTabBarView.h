@@ -1,9 +1,6 @@
 @class BCTabBar;
 
-@interface BCTabBarView : UIView {
-	UIView *contentView;
-	BCTabBar *tabBar;
-}
+@interface BCTabBarView : UIView
 
 @property (nonatomic, assign) UIView *contentView;
 @property (nonatomic, assign) BCTabBar *tabBar;

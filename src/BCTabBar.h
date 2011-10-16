@@ -2,13 +2,7 @@
 
 @protocol BCTabBarDelegate;
 
-@interface BCTabBar : UIView {
-	NSArray *tabs;
-	BCTab *selectedTab;
-	UIImage *backgroundImage;
-	UIImageView *arrow;
-	id <BCTabBarDelegate> delegate;
-}
+@interface BCTabBar : UIView
 
 - (id)initWithFrame:(CGRect)aFrame;
 - (void)setSelectedTab:(BCTab *)aTab animated:(BOOL)animated;

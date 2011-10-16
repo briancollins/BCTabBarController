@@ -25,12 +25,6 @@
 	return self;
 }
 
-- (void)dealloc {
-	self.rightBorder = nil;
-	self.background = nil;
-	[super dealloc];
-}
-
 - (void)setHighlighted:(BOOL)aBool {
 	// no highlight state
 }

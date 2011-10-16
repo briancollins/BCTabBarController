@@ -15,7 +15,7 @@
 
 	if (self = [super initWithFrame:aFrame]) {
 		self.backgroundImage = [UIImage imageNamed:@"BCTabBarController.bundle/tab-bar-background.png"];
-		self.arrow = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"BCTabBarController.bundle/tab-arrow.png"]] autorelease];
+		self.arrow = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"BCTabBarController.bundle/tab-arrow.png"]];
 		CGRect r = self.arrow.frame;
 		r.origin.y = - (r.size.height - 2);
 		self.arrow.frame = r;
@@ -38,24 +38,25 @@
 }
 
 - (void)setTabs:(NSArray *)array {
-	for (BCTab *tab in tabs) {
-		[tab removeFromSuperview];
-	}
-	
-	[tabs release];
-	tabs = [array retain];
-	
-	for (BCTab *tab in tabs) {
-		tab.userInteractionEnabled = YES;
-		[tab addTarget:self action:@selector(tabSelected:) forControlEvents:UIControlEventTouchDown];
-	}
-	[self setNeedsLayout];
+    if (tabs != array) {
+        for (BCTab *tab in tabs) {
+            [tab removeFromSuperview];
+        }
+
+        tabs = array;        
+        
+        for (BCTab *tab in tabs) {
+            tab.userInteractionEnabled = YES;
+            [tab addTarget:self action:@selector(tabSelected:) forControlEvents:UIControlEventTouchDown];
+        }
+        [self setNeedsLayout];
+
+    }
 }
 
 - (void)setSelectedTab:(BCTab *)aTab animated:(BOOL)animated {
 	if (aTab != selectedTab) {
-		[selectedTab release];
-		selectedTab = [aTab retain];
+		selectedTab = aTab;
 		selectedTab.selected = YES;
 		
 		for (BCTab *tab in tabs) {
@@ -104,14 +105,6 @@
 	
 	[self positionArrowAnimated:NO];
 }
-
-- (void)dealloc {
-	self.tabs = nil;
-	self.selectedTab = nil;
-	self.backgroundImage = nil;
-	[super dealloc];
-}
-
 
 - (void)setFrame:(CGRect)aFrame {
 	[super setFrame:aFrame];

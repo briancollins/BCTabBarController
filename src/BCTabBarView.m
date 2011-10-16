@@ -6,7 +6,6 @@
 
 - (void)setTabBar:(BCTabBar *)aTabBar {
 	[tabBar removeFromSuperview];
-	[tabBar release];
 	tabBar = aTabBar;
 	[self addSubview:tabBar];
 }
