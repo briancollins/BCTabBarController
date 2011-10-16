@@ -51,12 +51,12 @@
 	if (selectedViewController != vc) {
 		[selectedViewController release];
 		selectedViewController = [vc retain];
-		if (visible) {
+        if (!self.childViewControllers && visible) {
 			[oldVC viewWillDisappear:NO];
 			[selectedViewController viewWillAppear:NO];
 		}
 		self.tabBarView.contentView = vc.view;
-		if (visible) {
+        if (!self.childViewControllers && visible) {
 			[oldVC viewDidDisappear:NO];
 			[selectedViewController viewDidAppear:NO];
 		}
@@ -67,23 +67,32 @@
 
 - (void)viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:animated];
-	[self.selectedViewController viewWillAppear:animated];
+    
+    if (!self.childViewControllers)
+        [self.selectedViewController viewWillAppear:animated];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
 	[super viewDidAppear:animated];
-	[self.selectedViewController viewDidAppear:animated];
+    
+    if (!self.childViewControllers)
+        [self.selectedViewController viewDidAppear:animated];
+    
 	visible = YES;
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
 	[super viewWillDisappear:animated];
-	[self.selectedViewController viewWillDisappear:animated];	
+    
+    if (!self.childViewControllers)
+        [self.selectedViewController viewWillDisappear:animated];	
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
 	[super viewDidDisappear:animated];
-	[self.selectedViewController viewDidDisappear:animated];
+    
+    if (![self respondsToSelector:@selector(addChildViewController:)])
+        [self.selectedViewController viewDidDisappear:animated];
 	visible = NO;
 }
 
